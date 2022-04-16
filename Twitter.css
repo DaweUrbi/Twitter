@@ -92,7 +92,7 @@ body {
   scrollbar-width: none;
 }
 
-/* tweet */
+/* Tweet */
 .tweetBox_input img {
   border-radius: 50%;
   height: 50px;
@@ -111,7 +111,7 @@ body {
 
 .tweetBox_input {
   display: flex;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .tweetBox_input input {
@@ -133,10 +133,63 @@ body {
   height: 35px;
   margin-top: 20px;
   margin-left: auto; 
-  
-  
+}
 
+/* Post */
+.postAvatar img {
+  border-radius: 50%;
+  height: 40px;
+}
 
+.post {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(215, 217, 219, 0.244);
+  padding-bottom: 10px;
+}
+
+.postBody img {
+  width: 450px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.postFotter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.postBadge {
+  font-size: 14px !important;
+  color: var(--twitter-color);
+  margin-right: 5px;
+}
+
+.postHeaderSpecial {
+  font-weight: 600;
+  font-size: 13px;
+  color: rgba(113,118,122,255);
+}
+
+.postHeaderText h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.postHeaderDescription {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.postBody {
+  flex: 1;
+  padding: 10px;
+  margin-top: 6px;
+}
+
+.postAvatar {
+  padding: 20px;
 }
 
 
