@@ -160,8 +160,7 @@ body {
 
 .postBadge {
   font-size: 14px !important;
-  color: rgba(29,155,240,255);
-
+  color: var(--twitter-color);
   margin-right: 5px;
 }
 
@@ -231,9 +230,6 @@ body {
   padding-bottom: 10px;
 }
 
-.a {
-  color: rgba(29,155,240,255) !important;
-}
 
 
 
