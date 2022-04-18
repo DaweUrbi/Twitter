@@ -109,7 +109,6 @@ body {
 
 .tweetBox_input {
   display: flex;
-  /* padding: 20px; */
 }
 
 .tweetBox_input input {
@@ -161,7 +160,8 @@ body {
 
 .postBadge {
   font-size: 14px !important;
-  color: var(--twitter-color);
+  color: rgba(29,155,240,255);
+
   margin-right: 5px;
 }
 
@@ -229,6 +229,10 @@ body {
 
 .widget h2 {
   padding-bottom: 10px;
+}
+
+.a {
+  color: rgba(29,155,240,255) !important;
 }
 
 
