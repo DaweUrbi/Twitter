@@ -1,0 +1,247 @@
+$primary-color: rgb(214, 217, 219);
+$twitter-color:rgba(215,217,219,255);
+$blue-twitter-color: rgba(28,155,240,255);
+$hover-background-color: rgba(24, 24, 24, 255);
+
+@mixin name {
+  
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $twitter-color
+  }
+  
+body {
+    background-color: black;
+    color: $twitter-color;
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+  
+.leftSidebarOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+.leftSidebarOption .material-icons, .fa-twitter {
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .leftSidebarOption h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  
+.leftSidebarOption:hover {
+    background-color: $hover-background-color;
+    border-radius: 30px;
+    transition: color 100ms ease-out;
+  }
+  
+
+.leftSidebar {
+    border-right: 1px solid rgba(215, 217, 219, 0.244);
+    min-width: 250px;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .leftSidebarTweet {
+        width: 100%;
+        background-color: $blue-twitter-color;
+        border: none;
+        color: white;
+        font-weight: 900;
+        border-radius: 30px;
+        height: 50px;
+        margin-top: 20px;
+        &:hover {
+            background: #188CD8;
+        }
+    }
+  }
+  
+/* FeedBox */
+  
+.feed {
+    flex: 0.5;
+    border-right: 1px solid rgba(215, 217, 219, 0.244);
+    min-width: fit-content;
+    overflow-y: scroll;
+  }
+  
+.feedHeader {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.625);
+    z-index: 100;
+    padding: 15px;
+  }
+  
+.feedHeader h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  
+.feed::-webkit-scrollbar {
+    display: none;
+  }
+  
+.feed {
+    flex: 0.5;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  // Tweet
+.tweetBox_input img {
+    border-radius: 50%;
+    height: 50px;
+  }
+  
+.tweetBox {
+    border-bottom: 1px solid rgba(215, 217, 219, 0.244);
+  }
+  
+.tweetBox form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+.tweetBox_input {
+    display: flex;
+  }
+  
+.tweetBox_input input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: black;
+  }
+  
+.tweetBox_tweetbutton {
+    background-color: $blue-twitter-color;
+    color: white;
+    border: none;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 70px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: auto; 
+  }
+
+  // Post
+
+.postAvatar img {
+    border-radius: 50%;
+    height: 40px;
+  }
+  
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(215, 217, 219, 0.244);
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+  
+.postBody img {
+    width: 450px;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+  
+.postFotter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+.postBadge {
+    font-size: 14px !important;
+    color: $primary-color;
+    margin-right: 5px;
+  }
+  
+.postHeaderSpecial {
+    font-weight: 600;
+    font-size: 13px;
+    color: rgba(113,118,122,255);
+  }
+  
+.postHeaderText h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+.postHeaderDescription {
+    margin-bottom: 10px;
+    font-size: 18px;
+    max-width: fit-content;
+  }
+  
+.postBody {
+    flex: 1;
+    padding: 10px;
+    margin-top: 6px;
+  }
+  
+.postAvatar {
+    padding: 20px;
+  }
+
+  // Right Sidebar
+  
+.rightSideBar {
+    flex: 0.3;
+    min-width: fit-content;
+    overflow-y: scroll;
+  }
+  
+.rightSideBar_input {
+    display: flex;
+    align-items: center;
+    background-color: rgba(33,35,39,255);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+.rightSideBar_input input {
+    border: none;
+    background-color: rgba(33,35,39,255);
+    outline: none;
+  }
+  
+.searchIcon {
+    color: rgba(113,118,122,255);
+  }
+  
+.widget {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: rgba(22,24,28,255);
+    border-radius: 20px;
+  }
+  
+.widget h2 {
+    padding-bottom: 10px;
+  }  
