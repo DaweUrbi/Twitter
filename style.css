@@ -1,16 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #d7d9db;
+  box-sizing: border-box;
+  color: rgb(215, 217, 219);
 }
 
 body {
   background-color: black;
-  color: #d7d9db;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  color: rgb(215, 217, 219);
   display: flex;
   height: 100vh;
   max-width: 1300px;
@@ -20,12 +17,8 @@ body {
 }
 
 .leftSidebarOption {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -41,9 +34,8 @@ body {
 }
 
 .leftSidebarOption:hover {
-  background-color: #181818;
+  background-color: rgb(24, 24, 24);
   border-radius: 30px;
-  -webkit-transition: color 100ms ease-out;
   transition: color 100ms ease-out;
 }
 
@@ -54,10 +46,9 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-
 .leftSidebar .leftSidebarTweet {
   width: 100%;
-  background-color: #1c9bf0;
+  background-color: rgb(28, 155, 240);
   border: none;
   color: white;
   font-weight: 900;
@@ -65,16 +56,13 @@ body {
   height: 50px;
   margin-top: 20px;
 }
-
 .leftSidebar .leftSidebarTweet:hover {
   background: #188CD8;
 }
 
 /* FeedBox */
 .feed {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  flex: 0.5;
   border-right: 1px solid rgba(215, 217, 219, 0.244);
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
@@ -101,9 +89,7 @@ body {
 }
 
 .feed {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  flex: 0.5;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -118,26 +104,17 @@ body {
 }
 
 .tweetBox form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 20px;
 }
 
 .tweetBox_input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .tweetBox_input input {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   margin-left: 20px;
   font-size: 20px;
   outline: none;
@@ -146,7 +123,7 @@ body {
 }
 
 .tweetBox_tweetbutton {
-  background-color: #1c9bf0;
+  background-color: rgb(28, 155, 240);
   color: white;
   border: none;
   font-weight: 900;
@@ -163,12 +140,8 @@ body {
 }
 
 .post {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   border-bottom: 1px solid rgba(215, 217, 219, 0.244);
   padding-bottom: 10px;
   padding-right: 10px;
@@ -182,25 +155,21 @@ body {
 }
 
 .postFotter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 10px;
 }
 
 .postBadge {
   font-size: 14px !important;
-  color: #d6d9db;
+  color: rgb(214, 217, 219);
   margin-right: 5px;
 }
 
 .postHeaderSpecial {
   font-weight: 600;
   font-size: 13px;
-  color: #71767a;
+  color: rgb(113, 118, 122);
 }
 
 .postHeaderText h3 {
@@ -217,9 +186,7 @@ body {
 }
 
 .postBody {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 10px;
   margin-top: 6px;
 }
@@ -229,9 +196,7 @@ body {
 }
 
 .rightSideBar {
-  -webkit-box-flex: 0.3;
-      -ms-flex: 0.3;
-          flex: 0.3;
+  flex: 0.3;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -239,13 +204,9 @@ body {
 }
 
 .rightSideBar_input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #212327;
+  align-items: center;
+  background-color: rgb(33, 35, 39);
   padding: 10px;
   border-radius: 20px;
   margin-top: 10px;
@@ -254,23 +215,22 @@ body {
 
 .rightSideBar_input input {
   border: none;
-  background-color: #212327;
+  background-color: rgb(33, 35, 39);
   outline: none;
 }
 
 .searchIcon {
-  color: #71767a;
+  color: rgb(113, 118, 122);
 }
 
 .widget {
   margin-top: 15px;
   margin-left: 20px;
   padding: 20px;
-  background-color: #16181c;
+  background-color: rgb(22, 24, 28);
   border-radius: 20px;
 }
 
 .widget h2 {
   padding-bottom: 10px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
